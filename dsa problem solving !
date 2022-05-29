@@ -24,24 +24,30 @@ class Classy(object):
     def getClassiness(self):
         print(self.classiness)
 
-    def createList(self):
-        self.items.append(item)
 
-    def addItem(self, item):
 
-        if item=="tophat":
-            self.classiness+=2
-        elif item=="bowtie":
-            self.classiness+=4
-        elif item=="monocle":
-            self.classiness+=5
+    def additem(self, item):
+
+        if item == "tophat":
+            self.classiness += 2
+        elif item == "bowtie":
+            self.classiness += 4
+        elif item == "monocle":
+            self.classiness += 5
         else:
-            self.classiness+=0
+            self.classiness += 0
 
         return self.classiness
+
+    def createList(self):
+        self.items.append(item)
 
 # Test cases
 me = Classy()
 
+
 # Should be 0
+
+
+print (me.additem(input("write your item")))
 print(me.getClassiness())
